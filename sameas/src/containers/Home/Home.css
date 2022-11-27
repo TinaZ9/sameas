@@ -1,0 +1,124 @@
+.Home__page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+    height: auto;
+    width:100%;
+    background-color: var(--ocean-blue);
+}
+
+.button__start, .button__start:active{
+    width: 10rem;    
+    align-self: center;
+    justify-self: center;
+    font-size: inherit;
+    font-weight: 600;
+    padding: 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin-bottom: 5rem;
+}
+
+
+.button__start:hover{
+    background-color: #000;
+    color: white;
+}
+
+.player__name{
+    align-self: center;
+    justify-self: center;
+}
+
+.player__name input{
+    font-size: 1.5rem;
+}
+
+.player__container{
+    position: relative;
+    width: 30%;
+
+    background-color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    transition: all 0.5s ease;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: hidden;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, 
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.player__error{
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: red;
+}
+
+.player__ranking{
+    width: 100%;
+    font-size: 1rem;
+}
+
+.player__ranking_profile{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.player__ranking_profile span{
+    padding: 0.5rem;
+}
+
+.player__ranking_profile-label{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.game__mode_current-score{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+    font-size: 2rem;
+    width: 30%;
+}
+
+.game__mode_current-score button{
+    
+    background-color: #fff;
+    font-weight: bolder;
+    padding: 0 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.game__mode_current-score button:hover{
+    
+    background-color: var(--my-blue);
+    color: #fff;
+}
+
+
+.drop__button{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:900px) {
+    .player__container{
+        width: 100%;
+    }    
+}
